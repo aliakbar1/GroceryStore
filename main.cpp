@@ -29,14 +29,14 @@ int main()
   cin>>input;
      if (input=='A'||input=='a')
     {
-            cout<<"What is the item?";
+            cout<<"What is the item?\n";
             cin>>newitem;
          
             
       
     if(numItems>=5)
     {
-            cout<<"You'll need a bigger list!";
+            cout<<"You'll need a bigger list!\n";
     }
     else {
 
