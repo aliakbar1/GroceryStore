@@ -7,7 +7,7 @@ int main()
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
-
+  int index;
    string newitem;
    do
 { 
@@ -55,6 +55,14 @@ int main()
 
 
    while(input!='q'&&input!='Q');
-            
+   cout<<"==ITEMS TO BUY==\n";
+
+  for(int index=0; index<5; index++)
+{
+        
+cout<<index+1;
+cout<<".";
+cout<<list[index]<<endl;
+}            
   return 0;
 }
