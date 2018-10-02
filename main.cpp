@@ -61,7 +61,7 @@ int main()
 {
         
 cout<<index+1;
-cout<<".";
+cout<<" ";
 cout<<list[index]<<endl;
 }            
   return 0;
