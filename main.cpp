@@ -12,6 +12,7 @@ int main()
  string newitem;
    do
 { 
+  cout<<"==GROCERY LIST MANAGER==";      
 
   cout<<"\nEnter your choice: ";
   
@@ -55,7 +56,8 @@ int main()
 
   for(int index=0; index<list.size(); index++)
 {
-        
+      cout<<index+1;
+      cout<<" ";
 cout<<list[index]<<endl;
 
 
