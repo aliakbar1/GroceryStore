@@ -1,27 +1,21 @@
 #include<iostream>
 #include<string>
+#include<vector>
 using namespace std;
 
 int main()
 {
-  string list[5]; //array of 5 strings
+  vector <string>list; //array of 5 strings
   int numItems = 0;
   char input;
   int index;
-   string newitem;
+ string newitem;
    do
 { 
-        
-    
-   
-    
-
-  cout<<"\n==GROCERY LIST MANAGER==";
 
   cout<<"\nEnter your choice: ";
   
   cout<<"\n (A)dd an item";
-  
 
   cout<<"\n (Q)uit";
   
@@ -38,11 +32,12 @@ int main()
     {
             cout<<"You'll need a bigger list!\n";
     }
+    
     else {
 
     
-            list[numItems]=newitem;
-            numItems++;
+            
+            list.push_back(newitem);
     }        
              
     
@@ -55,14 +50,20 @@ int main()
 
 
    while(input!='q'&&input!='Q');
-   cout<<"==ITEMS TO BUY==\n";
+   if(list.size()>=1)
+{cout<<"==ITEMS TO BUY==\n";}
 
-  for(int index=0; index<5; index++)
+  for(int index=0; index<list.size(); index++)
 {
         
-cout<<index+1;
-cout<<" ";
 cout<<list[index]<<endl;
-}            
+
+
+}           
+if(list.size()<1)
+{
+cout<<"No items to buy!\n";
+}
+
   return 0;
 }
