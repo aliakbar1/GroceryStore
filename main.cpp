@@ -12,7 +12,7 @@ int main()
  string newitem;
    do
 { 
-  cout<<"==GROCERY LIST MANAGER==";      
+  cout<<"\n==GROCERY LIST MANAGER==";      
 
   cout<<"\nEnter your choice: ";
   
