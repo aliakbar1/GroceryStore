@@ -33,7 +33,7 @@ int main()
                         cin>>newitem;
                         list.push_back(newitem);
                 }
-                else if(input=='d'||input=='D')
+                else if(input=='d' && list.size()>0 ||input=='D' && list.size()>0)
                 {
                         cout<<list[list.size()-1]<<" was deleted from the list.\n";
 
